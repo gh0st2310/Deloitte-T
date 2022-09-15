@@ -1,0 +1,12 @@
+.header{
+    border-top: 5px solid black;
+    border: 10px solid green;
+    border-width: 12px;
+    /*border-color: red;*/
+    border-style: ridge;
+
+}
+
+span{
+    border: 2px solid aqua;
+}

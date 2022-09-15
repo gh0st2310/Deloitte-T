@@ -1,0 +1,20 @@
+p{
+    color: green;
+    font-size: smaller;
+}
+h1{
+    color: purple;
+}
+
+#fruits{
+    background-color: orange;
+}
+#dry-fruits{
+   background-color: pink;
+}
+#fruits li{
+    color: teal;
+}
+#dry-fruits li{
+    color: blue;
+}
