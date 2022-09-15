@@ -1,0 +1,12 @@
+.container{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding-left: 20px;
+    box-sizing: border-box;
+    box-shadow: -10px -10px 5px rgb(0,0,0);
+    background-color: aquamarine;
+    border-radius: 25%;
+}
+
