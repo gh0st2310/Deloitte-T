@@ -1,0 +1,25 @@
+.container{
+    border: 2px solid black;
+    width: 40%;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    /*overflow:hidden; */
+}
+.container-left{
+    float: left;
+    background-color: rgb(124, 111, 57);
+}
+.container-right{
+    float: right;
+    background-color: rgb(98, 183, 14);
+}
+.container-bottom{
+    float:left;
+    background-color: coral;
+    width: 90%;
+    clear: both;
+}
