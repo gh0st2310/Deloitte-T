@@ -1,0 +1,29 @@
+.container{
+    /*width: 200px;*/
+    height: 200px;
+    border: 3px dashed rgb(240, 240, 6);
+    padding: 10px;
+}
+
+img{
+    border: 2px solid salmon;
+    display: block;             /* block option makes the object behaves as a block while inline make it behave inline*/
+}
+
+#image2{
+    border: 2px solid salmon;
+    float:right;
+}
+
+#locationPoint{
+    visibility: hidden;     /* does not show it in the web page*/
+}
+
+ul li{
+    display: inline;
+    margin: 3px;
+    border: 2px solid rgba(12, 181, 125, 0.8);
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgba(12, 181, 125, 0.6);
+}
