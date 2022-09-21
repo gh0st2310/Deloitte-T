@@ -1,0 +1,18 @@
+.container{
+    border:2px solid black;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    /* grid-template-columns: 70% repeat(2,15%); /* makes 2 spaces of 30 px each after */
+      /* 70% of the width of container*/  
+    /*grid-template-columns: 100px auto 500px; /* creates a 100px space at left and 500px space at right
+    and adjuxts the in between space automatically*/
+    /* specifying auto makes the ends from opposite ends and divides as per*/
+    grid-template-rows: 10% 20% 40% 30% ;/*creates 2 100px grids from top*/
+    /* grid-template-columns: repeat(10,1fr); creates 12 equal divisions */
+    grid-template-columns: 1fr 2fr 3fr 4fr; /*divides the colums in 1:2:3:4 ratio*/
+
+
+    row-gap: 5px;
+    
+}

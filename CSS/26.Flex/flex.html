@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Flex</title>
+        <style type="text/css">
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 30px;
+            }
+            .container{
+                background: #eee;
+                width: 600px;
+                margin: 50px auto 0;
+                padding: 10px;
+                border: 3px solid black;
+
+                display: flex;
+                /*flex-direction: row;*/
+                /*flex-direction: row-reverse;*/
+                flex-direction: column;
+               /* flex-direction: column-reverse;*/
+            }
+
+            .item1{background: orangered;}
+            .item2{background: yellowgreen;}
+            .item3{background: mediumorchid;}
+            .item4{background: hotpink;}
+            .items{
+                color:aliceblue;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- new module in CSS3 to easy allign elements in different dirrections and orders.-->
+
+        <!-- Properties we will learn
+        .flex-direction
+        .flex-wrap
+        .flex-flow
+        .flex-grow
+        .flex-shrink
+        .flex-basis
+        .flex
+        .justify-content
+        .align-content
+        .align-items
+        .align-self
+        .order
+        -->
+
+<h1>CSS Flex Introduction</h1>
+<div class="container">
+    <div class="items item1">One</div>
+    <div class="items item2">Two</div>
+    <div class="items item3">Three</div>
+    <div class="items item4">Four</div>
+</div>
+    </body>
+
+</html>
