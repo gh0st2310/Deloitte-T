@@ -1,0 +1,65 @@
+
+
+
+a[attr] - Element with Specific attribute
+a[attr=val] - Attribute whose value is exactly value
+a[attr^=val] - Attribute begins with value
+a[attr\=val] - Attribute begins with value OR is first in a dashed separated list
+a[attr$=val] - Attributes end with value
+a[attr*=val] - value occurs anywhere in attribute
+a[attr~=val] - value matches attribute in space separated list (value having space before and after it)
+
+
+input type="text"
+
+
+img[title='cat']{
+    border: 1px solid red;
+}
+img[alt='image of cat']{
+    border: 9px solid black;
+}
+
+/*attribute name has prefix*/
+
+img[alt^='image']{
+    border: 3px solid red;
+}
+
+img[alt]{all img tags having alt as attribute
+    border: 8px solid red;
+}
+
+/*attribute name has suffix*/
+
+img[alt$='animal']{all img tags having alt as attribute
+    border: 3px solid red;
+}
+
+/*attribute value exactly like this or atleast starts with this*/
+
+img[alt|='cat']{all img tags having alt as attribute
+    border: 3px solid red;
+}
+
+/*attribute name has this as atleast one occurance*/
+img[alt*='and']{all img tags having alt as attribute
+    border: 3px solid red;
+}
+
+img[alt~='and']{all img tags having alt as attribute
+    border: 3px solid red;
+}
+
+*img[title]{all img having alt as attribute
+border: 3px solid red;
+}
+ input[type='text']{
+    border: 3px solid red;
+ }
+
+ a[target='_blank']{
+    color:red;
+ }
+
+

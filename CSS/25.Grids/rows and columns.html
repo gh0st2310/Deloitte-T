@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid-Columns and Rows</title>
+        <style type="text/css">
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .container{
+                background: aliceblue;
+                width:800px;
+                height: 500px;
+                margin: 50px;
+                display: grid;
+                grid-template-columns: repeat(2,390px);
+                grid-template-columns: repeat(auto-fit,100px);
+                /*grid-template-columns: repeat(auto-fill,200px);*/
+                /*grid-template-columns: 150px 200px auto;*/
+                grid-template-rows: 150px auto;
+                grid-gap: 15px 20px;/* row gap:15px, column gap:20px*/
+            }
+            .item1{
+                background: orangered;
+                /*grid-column: 3/4;
+                grid-row: 2/3;*/
+            }
+            .item2{
+                background: wheat;
+            }
+            .item3{
+                background: slateblue;
+            }
+            .item4{
+                background: hotpink;
+            }
+            .item5{
+                background: greenyellow;
+            }
+            .item6{
+                background: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Properties 
+        grid-template-columns
+        grid-template-rows-->
+
+        <h1>CSS Grid Rows and Columns</h1>
+        <div class="container">
+        <div class="items item1">First</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">Third</div>
+         <div class="items item4">Fourth</div> 
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+        </div>
+    </body>
+</html>
