@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <script src="https://kit.fontawesome.com/599e1d9dc5.js" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+            .container1{
+                display:grid;
+                grid-template-columns: repeat(15,1fr);
+                grid-template-rows: repeat(16,50px);
+                background-image: url(PortfolioFolder/image1.jpg);
+                background-position: center;
+                background-size: cover;
+                width:100%;
+                height:800px;
+                color: whitesmoke;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .content1{
+                padding-left:50px;
+                grid-column: 8/12;
+                grid-row: 4/9;
+            }
+            .socialicons{
+                display: flex;
+                flex-flow: row;
+                grid-row: 2/3;
+                grid-column: 11/15;
+                cursor:pointer;
+            }
+            .icons{
+                color:white;
+                width:25px;
+                height: 25px;
+                padding:15px;
+            }
+            i:hover{
+                color: rgb(196, 249, 249);
+            }
+            .print{
+                border: 2px solid rgb(81,79,79);
+                
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                background-color:;
+                color:aqua;
+                width: 120px;
+                height:25px;
+                padding:12px;
+                grid-column: 9/11;
+                grid-row: 10/11;
+                font-size: 16px;
+                cursor:pointer;
+            }
+            .container2{
+                position: sticky;
+                top:0;
+                padding: 30px;
+                width:100%;
+                height:50px;
+                display:flex;
+                flex-flow: row wrap;
+                box-shadow: 5px 5px 10px grey;
+                background-color: aliceblue;
+                
+            }
+            .socialicons2{
+                display:flex;
+                flex-flow: row;
+                padding-left: 110px;
+                cursor:pointer;
+            }
+            .icons2{
+                color:black;
+                padding:10px;
+                cursor:pointer;
+            }
+            .container21{
+                width:30%;
+                height:100%;
+                display: flex;
+                flex-flow: row wrap;
+                background-color: ;
+
+            }
+            .tabs{
+                width:100px;
+                height:30px;
+                padding:5px;
+                background-color: aliceblue;
+                color: black;
+                font-size:20px;
+                cursor:pointer;
+                
+            }
+            .tabs:hover{
+                color:cyan;
+            }
+            
+            .container22{
+                width:40%;
+                height:100%;
+                
+            }
+            .title{
+                width:100%;
+                height: 100%;
+                text-align: center;
+                font-size: 14px;
+                z-index: 0;
+            }
+            .title h1{
+                margin: 0;
+            }
+            .container23{
+                width:30%;
+                height:100%;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .pfp{
+                width:200px;
+                height:200px;
+                border:2px solid hotpink;
+                
+                border-radius: 50%;
+                background-image: url(PortfolioFolder/mypic4.JPG);
+                background-position: center;
+                background-size: cover;
+                background-color: aliceblue;
+                grid-row:16/17;
+                grid-column:8/9;
+                z-index:2;
+                image-rendering: pixelated;
+            }
+            .container3{
+                width:100%;
+                height:450px;
+                display: flex;
+                flex-flow: row wrap;
+                text-align:center;
+                animation-name: sample;
+			    animation-duration: 2s;
+			    animation-iteration-count: 1;
+			    animation-direction:reverse;
+                color:black;
+                background-color: aliceblue;
+                
+            }
+            /*@keyframes sample{
+                100%   {background-color:aliceblue;}
+                75%  {background-color:rgb(172, 210, 243)}
+                50%  {background-color: rgb(109, 182, 245);}
+                25%  {background-color:rgb(72, 168, 252);}
+                0% {background-color: rgb(18, 140, 248);}
+            }*/
+            .container31{
+                padding-top: 50px;
+                width:33%;
+                height:;
+                border-right: 1px solid rgb(160,160,160);
+                
+            }
+            .container32{
+                padding-top: 50px;
+                width:33%;
+                height:;
+                border-right: 1px solid rgb(160,160,160);
+            }
+            .container33{
+                padding-top: 50px;
+                width:33%;
+                height:;
+                
+            }
+            .container41{
+                padding-left:40px;
+                padding-right: 40px;
+                padding-top:30px;
+                width:100%;
+                height:auto;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .container41 p{
+                color:rgb(96, 96, 96);
+                justify-content:space-between;
+            }
+            .resume{
+                border: 1px solid grey;
+                padding:10px;
+                width:26.33%;
+                
+                text-align: justify;
+            }
+            .container5{
+                display: flex;
+                flex-flow: row wrap;
+                width:100%;
+                height:auto;
+                margin:3px solid rgb(65, 65, 65);
+                background-color: rgb(65, 65, 65);
+                padding: 75px;
+
+                
+
+            }
+            .bigicons{
+                color: white;
+                width:65px;
+                height: 65px;
+                padding:25px;
+                border-right:1px solid  white;
+            }
+            .abt{
+                padding-left:25px;
+                padding-right: 50px;
+
+            }
+            .container61{
+                padding-left:40px;
+                padding-right: 40px;
+                padding-top:30px;
+                width:100%;
+                height:auto;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .service{
+                border: 1px solid grey;
+                padding:10px;
+                width:26.33%;
+                text-align: justify;
+            }
+            .service p{
+                color:rgb(96, 96, 96);
+            }
+            .container71{
+                padding-left:40px;
+                padding-right: 40px;
+                padding-top:30px;
+                width:100%;
+                height:auto;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .packs{
+                border: 1px solid grey;
+                padding:10px;
+                width:20%;
+                text-align: center;
+                color:rgb(96, 96, 96);
+            }
+            .container9{
+                width:100%;
+                height:750px;
+                background-image: url(PortfolioFolder/mypic2.jpg);
+                background-position: center;
+                background-size: cover;
+
+            }
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: hotpink;
+              }
+              
+              .form1 {
+                margin-left:100px;
+                border-radius: 5px;
+                background-color: rgba(204,204,204,0.3);
+                padding: 20px;
+              }
+              .form2 {
+                margin-left:100px;
+                border-radius: 5px;
+                background-color: rgba(204,204,204,0.6);
+                padding: 20px;
+              }
+            
+
+
+
+           
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container1">
+            <div class="content1">
+            
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+            <h2>Hello,  I am </h2>
+                <h3>Srinibash</h3>
+                <h4>We are a creative group of people who design
+                    influential brands and digital experiences.</h4>
+            </div>
+            <div class="socialicons">
+                <div class="icons fb">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </div>
+                <div class="icons tw">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </div>
+                <div class="icons gp">
+                    <i class="fa-brands fa-google-plus fa-2x"></i>
+                </div>
+                <div class="icons in">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </div>
+                <div class="icons gh">
+                    <i class="fa-brands fa-github-alt fa-2x"></i>
+                </div>
+            </div>
+            <div class="print"><i class="fa-solid fa-print"></i> Print Resume</div> 
+            <div class="pfp">
+
+            </div>   
+        </div>
+
+        <div class="container2">
+            <div class="container21">
+            <div class="tabs tab1">Home</div>
+            <div class="tabs tab2">About</div>
+            <div class="tabs tab3">Resume</div>
+            </div>
+            <div class="container22">
+                <div class="title">
+                <h1>Srinibash</h1>
+                <!-- <p> Web Designer</p> -->
+                </div>
+
+            </div>
+            <div class="container23">
+            <div class="tabs tab4">Portfolio</div>
+            <div class="tabs tab5">Blog</div>
+            <div class="tabs tab6">Contact</div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="container31" style="text-align:justify;">
+                <h2 style="padding-left:40px;">Who Am I?</h2>
+                
+                <h3 style="padding:40px;">A Web Designer / Developer Located In Our Lovely Earth</h3>
+            </div>
+            <div class="container32" style="text-align:justify;">
+                <h2 style="padding-left:40px;">Personal Info</h2>
+                
+                <ul style="padding:40px;">
+                    <li><strong>Birthdate: </strong>23/08/2000</li>
+                    <li><strong>Email: </strong><a href="srinibashsahoo40@gmail.com">
+                        srinibashsahoo40@gmail.com </a></li>
+                    <li><strong>Phone: </strong>+(91) 8114683330</li>
+                    <li><strong>Skype: </strong>Srinibash_Sahoo</li>
+                    
+                </ul>
+                <div class="socialicons2">
+                    <div class="icons2 fb">
+                        <i class="fa-brands fa-facebook fa-1.5x"></i>
+                    </div>
+                    <div class="icons2 tw">
+                        <i class="fa-brands fa-twitter fa-1.5x"></i>
+                    </div>
+                    <div class="icons2 gp">
+                        <i class="fa-brands fa-google-plus fa-1.5x"></i>
+                    </div>
+                    <div class="icons2 in">
+                        <i class="fa-brands fa-instagram fa-1.5x"></i>
+                    </div>
+                    <div class="icons2 gh">
+                        <i class="fa-brands fa-github-alt fa-1.5x"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container33" style="text-align: justify;">
+                <h2 style="padding-left:40px;">My Expertise</h2>
+                
+                <div class="expertises1" style="padding-left:40px;">
+                    <h3>UX Design</h3>
+                    <p>exercitat Repellendus, corrupt.</p>
+                </div>
+                <div class="expertises2" style="padding-left: 40px;">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit consectetur.
+                    </p>
+                </div>
+                <div class="expertises3" style="padding-left: 40px;">
+                    <h3>Digital Marketing</h3>
+                    <p>voluptate commodi illo voluptatib.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4">
+
+            <h1 style="padding-left:90px; padding-top:50px;padding-bottom:30px;">
+                <span style="color:aqua"> My</span> Resume</h1>
+            <div class="container41">
+            
+            <div class="resume res1" style="margin-right:3%; margin-left:4.5%;">
+                <h2>Expertise</h2>
+                <h4 style="color:aqua;">2017 - Present</h4>
+                <p>UX Developer</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</p>
+                
+
+                <h4 style="color:aqua;">2016 - 2017</h4>
+                <p>Front-end Developer</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</p>
+
+                <h4 style="color:aqua;">2015 - 2016</h4>
+                <p>UX Designer</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</p>
+            </div>
+
+            <div class="resume res2" style="margin-right:3%;">
+                <h2>Education</h2>
+                <h4 style="color:aqua">2018 - 2022</h4>
+                <p>B.Tech Mechanical Engineering</p>
+                <p>Under Graduate in Mechanical Engineering from National Institute of Technology, Rourkela.</p>
+                <p>CGPA: 8.64</p>
+
+                <h4 style="color:aqua">2016 - 2018</h4>
+                <p>Higher Secondary School Degree</p>
+                <p>Passed CBSE XII Board from DAV Public School, Unit VIII, Bhubaneswar.</p>
+                <p>Percentage: 92.6%</p>
+
+                <h4 style="color:aqua">2015 - 2016</h4>
+                <p>High School Degree</p>
+                <p>Passed ICSE XI Board from Bethany Convent School,Paradip.</p>
+                <p>Percentage: 93.67%</p>
+            </div>
+            
+            <div class="resume res3" style="display:flex;flex-flow:column ; border:0;margin:0;padding:0;">
+                <div class="res31" style="padding:10px;margin-right:4.5%; margin-bottom:2%; border:1px solid grey;">
+                <h2>Skills</h2>
+
+                <h3 style="color:rgb(96, 96, 96);">HTML5 & CSS3</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:95%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+
+                <h3 style="color:rgb(96, 96, 96);">JavaScript</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:85%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+
+                <h3 style="color:rgb(96, 96, 96);">PHP</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color: rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:80%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+
+                <h3 style="color:rgb(96, 96, 96);">SQL</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:92%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+
+                <h3 style="color:rgb(96, 96, 96);">Laborum</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:88%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+
+                <h3 style="color:rgb(96, 96, 96);">Tempora</h3>
+                <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                    <div class="progressb1" style="width:88%; height:4px; background-color:hotpink;">
+                    </div>
+                </div>
+                </div>
+
+                <div class="res32" style="padding:10px;margin-right:4.5%; margin-top:2%; border:1px solid grey; ">
+                    <h2>Languages</h2>
+
+                    <h3 style="color:rgb(96, 96, 96);">English</h3>
+                    <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                        <div class="progressb1" style="width:88%; height:4px; background-color:hotpink;">
+                        </div>
+                    </div>
+
+                    <h3 style="color:rgb(96, 96, 96);">Hindi</h3>
+                    <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                        <div class="progressb1" style="width:80%; height:4px; background-color:hotpink;">
+                        </div>
+                    </div>
+
+                    <h3 style="color:rgb(96, 96, 96);">Odia</h3>
+                    <div class="progressb" style="width:100%; height:4px; background-color:rgb(110, 110, 110);">
+                        <div class="progressb1" style="width:85%; height:4px; background-color:hotpink;">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- <div class="resume res4">
+                <h2>Languages</h2>
+
+            </div> -->
+
+        </div>
+
+        <div class="container5" style="margin-top:5%">
+            <div class="bigicons clock">
+                <i class="fa-regular fa-clock fa-4x"></i>
+            </div>
+            <div class="abt clock">
+                <h1 style="color:aqua;">500</h1>
+                <p style="color:white;">Hours Worked</p>
+            </div>
+
+            <div class="bigicons projects">
+                <i class="fa-solid fa-list-check fa-4x"></i>
+            </div>
+            <div class="abt projects">
+                <h1 style="color:aqua;">50K</h1>
+                <p style="color:white;">Projects Finished</p>
+            </div>
+
+            <div class="bigicons clients">
+                <i class="fa-solid fa-face-laugh-beam fa-4x"></i>
+            </div>
+            <div class="abt clock">
+                <h1 style="color:aqua;">200K</h1>
+                <p style="color:white;">Happy Clients</p>
+            </div>
+
+            <div class="bigicons coffee">
+                <i class="fa-solid fa-mug-hot fa-4x"></i>
+            </div>
+            <div class="abt clock">
+                <h1 style="color:aqua;">2K</h1>
+                <p style="color:white;">Coffee Drinked</p>
+            </div>
+        </div>
+
+        <div class="container6">
+            <h1 style="padding-left:85px; padding-top:50px;padding-bottom:30px;"><span style="color:aqua;">My</span> Services</h1>
+
+            <div class="container61">
+                <div class="service ser1" style="margin-right:1%; margin-left:3%">
+                    <h2>Ullam</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+
+                </div>
+
+                <div class="service ser2" style="margin-right:1%; margin-left:1%">
+                    <h2>Asperiores</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+                    
+                </div>
+
+                <div class="service ser3" style="margin-right:3%; margin-left:1%">
+                    <h2>Tempora</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+                    
+                </div>
+
+                <div class="service ser4" style="margin-right:1%; margin-left:3%;margin-top:3%;">
+                    <h2>Provident</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+                    
+                </div>
+
+                <div class="service ser5" style="margin-right:1%; margin-left:1%;margin-top:3%;">
+                    <h2>Consectetur</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+                    
+                </div>
+
+                <div class="service ser6" style="margin-right:3%; margin-left:1%; margin-top:3%;">
+                    <h2>Veritatis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p>
+                    
+                </div>
+    
+
+            </div>
+
+        </div>
+
+        <div class="container7">
+            <h1 style="padding-left:85px; padding-top:50px;padding-bottom:30px;"><span style="color:aqua;">
+                Packs</span> Pricing</h1>
+                <div class="container71">
+
+                    <div class="packs p1" style="margin-right:1%; margin-left:3%">
+                        <h2>Free</h2>
+                        <h2><sup>$</sup><strong><span style="font-size:56px;">0</span></strong><sub>/MO</sub></h2>
+                        <br><br>
+                        <p><strong>5</strong> Project</p>
+                        <p><strong>1GB</strong> Storage</p>
+                        <p>No Domain</p>
+                        <p><strong>1</strong> User</p>
+                        <center> <div class="subbtn" style="width:150px;background-color:aqua;border: 1px solid aqua;padding:1px;">
+                            <p><strong>Subscribe</strong></p>
+
+                        </div></center>
+                    </div>
+
+                    <div class="packs p2" style="margin-right:1%; margin-left:1%;align-content:center;">
+                        <h2>Basic</h2>
+                        <h2><sup>$</sup><strong><span style="font-size:56px;">10</span></strong><sub>/MO</sub></h2>
+                        <br><br>
+                        <p><strong>50</strong> Project</p>
+                        <p><strong>10GB</strong> Storage</p>
+                        <p><strong>1</strong> Domain</p>
+                        <p><strong>5</strong> User</p>
+                       <center> <div class="subbtn" style="width:150px;background-color:aqua;border: 1px solid aqua;padding:1px;">
+                            <p><strong>Subscribe</strong></p>
+
+                        </div></center>
+                    </div>
+
+                    <div class="packs p3" style="margin-right:1%; margin-left:1%;height:110%;">
+                        <h2>Exclusive</h2>
+                        <h2><sup>$</sup><strong><span style="color:aqua; font-size:56px;">25</span></strong><sub>/MO</sub></h2>
+                        <br><br>
+                        <p><strong>150</strong> Project</p>
+                        <p><strong>15GB</strong> Storage</p>
+                        <p><strong>5</strong> Domain</p>
+                        <p><strong>15</strong> User</p>
+                        <center> <div class="subbtn" style="width:150px;background-color:aqua;border: 1px solid aqua;padding:1px;">
+                            <p><strong>Subscribe</strong></p>
+
+                        </div></center>
+                    </div>
+
+                    <div class="packs p4" style="margin-right:3%; margin-left:1%">
+                        <h2>Pro</h2>
+                        <h2><sup>$</sup><strong><span style="font-size:56px;">99</span></strong><sub>/MO</sub></h2>
+                        <br><br>
+                        <p><strong>500</strong> Project</p>
+                        <p><strong>1000GB</strong> Storage</p>
+                        <p><strong>10</strong> Domain</p>
+                        <p><strong>Unlimited</strong> User</p>
+                        <center> <div class="subbtn" style="width:150px;background-color:aqua;border: 1px solid aqua;padding:1px;">
+                            <p><strong>Subscribe</strong></p>
+
+                        </div></center>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="container8" style="width:100%;height:200px;background-color:rgb(48, 48, 48); text-align:center;">
+            <h1 style="color:white; padding-top:50px;">I Am Available For Freelance</h1>
+           <center> <div class="hirebtn" style="width:150px;height:auto;padding:2px;background-color:aqua;">
+                <p><span style="color:rgb(48,48,48);">Hire Me</span></p>
+
+            </div></center>
+
+        </div>
+
+        <div class="container9">
+            <div class="container91">
+                <p style="color:whitesmoke;font-size:112px;padding-left:100px;padding-top:100px;">Get In Touch</p>
+                <div class="forms" style="display:flex;flex-flow:row wrap">
+
+                <div class="form1" style="width:40%;">
+                    <h2 style="color:">Send A Message</h2>
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <input type="text" id="mail" name="email" placeholder="Your mail id..">
+
+                    
+                        <label for="country"><strong>Country</strong></label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                          <option value="usa">India</option>
+                          <option value="usa">Other</option>
+                        </select>
+
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+
+                <div class="form2" style="width:25%;">
+                    <h2>Contact Me</h2>
+
+                    <h3>Phone:</h3>
+                    <hp>+91(8114683330)</p>
+
+                    <h3>Address:</h3>
+                    <p>123 Dental Street, Bangalore</p>
+
+                    <h3>Email:</h3>
+                    <p>srinibashsahoo40@gmail.com</p>
+
+                    <div class="socialicons2" style="padding-left:30px;" >
+                        <div class="icons2 fb">
+                            <i class="fa-brands fa-facebook fa-1.5x"></i>
+                        </div>
+                        <div class="icons2 tw">
+                            <i class="fa-brands fa-twitter fa-1.5x"></i>
+                        </div>
+                        <div class="icons2 gp">
+                            <i class="fa-brands fa-google-plus fa-1.5x"></i>
+                        </div>
+                        <div class="icons2 in">
+                            <i class="fa-brands fa-instagram fa-1.5x"></i>
+                        </div>
+                        <div class="icons2 gh">
+                            <i class="fa-brands fa-github-alt fa-1.5x"></i>
+                        </div>
+                    </div>
+                    
+
+
+                    
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+        
+    
+
+
+       
+    </body>
+</html>

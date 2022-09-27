@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Backface Visibility</title>
+	<style type="text/css">
+		body{
+			font-family: arial, helvetica;
+			background: #eeee;
+		}
+
+		.card{
+			width: 300px;
+			height: 300px;
+			border: 0;
+			position: absolute;
+			left:50%;
+			top: 50%;
+			margin: -150px;
+			perspective: 500px;
+		}
+
+		.content{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: transform 1s;
+			transform-style: preserve-3d;
+		}
+
+		.card:hover .content{
+			transform: rotateY(180deg);
+		}
+
+		.front, 
+		.back{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: #fff;
+			color: tomato;
+			font-size: 60px;
+			text-align: center;
+			line-height: 300px;
+			border-radius: 5px;
+			backface-visibility: hidden;
+
+		}
+
+		.back{
+			background: tomato;
+			color: #fff;
+			transform: rotateY(180deg);
+		}
+
+	</style>
+</head>
+<body>
+values -- to be used with tansform, i.e is depended on transform -- to show the back side or to hide it
+visible
+hidden
+
+<h1 style="margin-bottom: 50px;">CSS Backface Visibility</h1>
+<div class="card">
+	<div class="content">
+		<div class="front">Front</div>
+		<div class="back">Back!</div>
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

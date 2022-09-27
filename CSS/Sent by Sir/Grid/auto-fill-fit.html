@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Auto Fill and Auto Fit</title>
+	<style type="text/css">
+		body{ font-family: arial, helvetica; }
+		h1{ padding: 0 0 0 40px; }
+
+		.container{
+			background: lightgrey;
+			width: 600px;
+			margin:  50px auto 0;
+
+			display: grid;
+		
+			grid-template-columns: repeat(3, 100px);
+			/* grid-template-columns: repeat(auto-fill, 100px); */
+			grid-template-columns: repeat(auto-fit, 100px);
+			grid-template-rows: repeat(2, 100px);
+		}
+
+		.item1{ background: orangered; }
+		.item2{ background: yellowgreen; }
+		.item3{ background: mediumpurple; }
+		.item4{ 
+			background: hotpink;
+			grid-column-end: -1;
+		 }
+		.item5{ background: royalblue; 
+		grid-column-end: -1;}
+		.item6{ background: orchid; }
+		.item7{ background: palegoldenrod; }
+		.item8{ background: orangered; }
+
+	</style>
+</head>
+<body>
+to handle the width of the grid
+
+<div class="container">
+	<div class=".items item1">One</div>
+	<div class=".items item2">Two</div>
+	<div class=".items item3">Three</div>
+	<div class=".items item4">Four</div>
+	<div class=".items item5">Five</div>
+
+</div>
+</body>
+</html>

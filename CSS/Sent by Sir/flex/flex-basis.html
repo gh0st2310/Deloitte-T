@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Flex-Basis</title>
+	<style type="text/css">
+		*{
+            margin: 0;
+        }
+
+		body{
+			font-family: arial, helvetica;
+		}
+
+		h1{
+			padding: 0 0 0 40px;
+		}
+
+		.container{
+			background: #eee;
+			margin: 50px;
+			width: 100%;
+			padding: 0px;
+			border: 3px solid #000;
+
+			display: flex;
+			/* flex-flow: row wrap; */
+		}
+		.items{ 
+			color: #fff; 
+			font-size: 20px; 
+			font-weight: bolder;
+			margin: 0px;
+			padding: 10px;
+			height: 60px;
+			text-align: center;
+			flex-grow: 1;
+			/* flex-basis: 100px; */
+			flex-shrink: 1;
+		}
+
+		.item1{ background: orangered;}
+		/* .item1{ background: orangered; flex-basis: 20%; } */
+		.item2{ background: yellowgreen; }
+		.item3{ background: mediumpurple; }
+		.item4{ background: orangered; }
+		.item5{ background: mediumpurple; }
+		/* .item6{ background: orangered; }
+		.item7{ background: mediumpurple; }
+		.item8{ background: orangered; }
+		.item9{ background: mediumpurple; }
+		.item10{ background: yellowgreen; }
+		.item11{ background: mediumpurple; }
+		.item12{ background: yellowgreen; }
+		.item13{ background: orangered; } */
+
+		
+	</style>
+</head>
+<body>
+<!-- works like the max width for the flex items -->
+
+<h1>CSS Flex-Basis</h1>
+<div class="container">
+	<div class="items item1" style="flex-basis: 200px;">One</div>
+	<!-- <div class="items item1">One</div> -->
+	<div class="items item2">Two</div>
+	<div class="items item3">Three</div>
+	<div class="items item4">Four</div>	
+	<div class="items item5">Five</div>	
+	<!-- <div class="items item6">Six</div>	
+	<div class="items item7">Seven</div>	
+	<div class="items item8">Eight</div>	
+	<div class="items item9">Nine</div>	
+	<div class="items item10">Ten</div>	
+	<div class="items item11">Eleven</div>	
+	<div class="items item12">Twelve</div>	
+	<div class="items item13">Thirteen</div> -->	
+</div>
+</body>
+</html>

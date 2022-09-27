@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid MinMax()</title>
+		<!-- To dynamically change the width and the height of the div within the grid system. -->
+
+	<style type="text/css">
+		body{ font-family: arial;}
+		h1{ padding: 0 0 0 40px; }
+
+		.container{
+			background: wheat;
+			width: 700px;
+			margin:  45px auto 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 200px 200px; /* repeate two column with 200px width */
+			/* grid-template-columns: max-content 1fr 1fr 1fr 1fr min-content; /* repeate two column with 200px width */
+			/* grid-template-rows:  repeat(2, 150px); /* also in % */
+			grid-template-rows:  repeat(2, minmax(150px, max-content)); /* also in % */
+			grid-gap: 5px;
+			/* minmax(<min value>, <max value>) */
+		}
+
+		.item1{
+			background: red;
+		}
+		.item2{
+			background: yellowgreen;
+		}
+		.item3{
+			background: slateblue;
+		}
+		.item4{
+			background: hotpink;
+		}
+		.item5{
+			background: royalblue;
+		}
+		.item6{
+			background: goldenrod;
+		}
+		.item7{
+			background: palegoldenrod;
+		}
+		.item8{
+			background: skyblue;
+		}
+	</style>
+</head>
+<body>
+property
+minmax()
+
+<h1>CSS Grid MinMax()</h1>
+<div class="container">
+	<div class="items item1">First The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+
+	<div class="items item2">First</div>
+	<div class="items item3">First The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 </div>
+
+	<div class="items item4">First</div>
+	<div class="items item5">Fifth</div>
+	<div class="items item6">Sixth</div>
+	<div class="items item7">Seventh</div>
+	
+	<div class="items item8">Eighth The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below forSections 1.10.32 and 1.10.33 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for</div>
+</div>
+</body>
+</html>

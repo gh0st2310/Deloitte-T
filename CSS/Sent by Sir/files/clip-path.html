@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Clip-Path</title>
+	<!-- works best with shape outside -->
+	<!-- caniuse -->
+	<!-- bennettfeely.com/clippy/ -->
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		img{
+
+			/*circle(radius, x-axis y-axis)
+			clip-path: circle(50% at 35% 50%);
+			clip-path: circle(40% at 0% 50%);
+			clip-path: circle(40% at 100% 50%);
+			clip-path: circle(40% at 0% 0%);
+			clip-path: circle(40% at 35% 50%);
+
+
+			ellipse
+			clip-path: ellipse(horizontal radius, vertical radius, x axis, y axis)
+			clip-path: ellipse(10% 40% at 50% 50%);
+			clip-path: ellipse(40% 10% at 50% 50%);
+
+			rectangle, square
+			clip-path: inset(top right bottom left);
+			clip-path: inset(40% 40% 35% 20%);*/
+
+			/*polygon*/
+			/*triangle 3 points*/
+			/*clip-path: polygon(50% 0%, 0% 100%, 100% 100%);*/
+
+			/*diamond 4 points*/
+			/*clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)*/
+		}
+
+		#box{
+			width: 500px;
+			height: 400px;
+			background-color: brown;
+			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+		}
+	</style>
+</head>
+<body>
+<!-- 	new in css 3
+values--
+circle
+ellipse
+inset
+polygon -->
+
+	<h1>CSS Clip-Path</h1>
+	<img src="cat.png">
+
+	<div id="box"></div>
+
+</body>
+</html>

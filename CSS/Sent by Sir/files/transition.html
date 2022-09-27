@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transition</title>
+	<!-- smoothness in transition -->
+	<!-- cubic-bezier.com -->
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		#box{
+			width: 150px;
+			height: 150px; 
+			background: pink;
+			margin-bottom: 20px;
+
+
+			/*transition can be applied on anything and not only using hover, and it must be present*/
+
+			transition-property: width, height, background;
+			transition-duration: 2s, 2s, 2s;
+			/* transition-timing-function: linear; */
+			/* transition-timing-function: ease-in; */
+			/* transition-timing-function: ease-out; */
+			/* transition-timing-function: ease-in-out; */
+			/* transition-timing-function: steps(4, start); */
+			/* only 4 steps */
+			transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); 
+			transition-delay: 5s;
+
+			/*short hand for transition
+			transition: which property, duration, timing-function, delay*/
+
+			/*transition: width, height, background 2s, 2s, 2s;*/
+			/* transition: all 2s, 2s, 2s; */
+
+
+
+		}
+
+		#box:hover{
+			width: 500px;
+			height: 500px; 
+			background: red; 
+		}
+
+
+		input{
+			width: 150px;
+			transition: width 2s;
+		}
+
+
+		input:focus{
+			width: 300px;
+		}
+	</style>
+
+</head>
+<body>
+<!-- transition properties
+transition -- shorthand
+transition-property -- on what you want to apply transition
+transition-duration -- duration
+transition-delay -- delay
+transition-timing-function -- inbuilt function fast slow etc
+ -->
+<h1>CSS Transition</h1>
+<div id="box"></div>
+
+
+<input type="" name="">
+
+</body>
+</html>

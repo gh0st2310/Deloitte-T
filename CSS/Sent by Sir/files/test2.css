@@ -1,0 +1,141 @@
+body{
+	font-family: arial;
+	/*background-color: blue;*/
+	/*background: radial-gradient(circle, red, yellow, blue); */
+
+
+}
+
+p{
+	margin: 0px;
+}
+
+#box-colors{
+	width: 800px;
+	height: 100px;
+	padding: 30px;
+	border: 3px solid black;
+	/*background-color: #fff25f;*/
+	/*background-color: rgb(100,100,100);*/
+	background-color: rgba(255,0,0,0.9);
+	/*background-color: hsl(150,50%,50%);*/
+	/*background-color: hsla(120,50%,50%,0.5);*/
+}
+
+#box-gradient{
+	width: 800px;
+	padding: 30px;
+	border: 2px solid black;
+	background: linear-gradient(to bottom left,red, yellow); 
+	margin: 20px;
+}
+
+#box-gradient2{
+	width: 800px;
+	padding: 30px;
+	border: 2px solid black;
+	background: repeating-linear-gradient(red, yellow 20%, blue 20%); 
+	margin: 20px;
+
+}
+
+#box-gradient3{
+	width: 800px;
+	padding: 30px;
+	border: 2px solid black;
+	background: repeating-radial-gradient(closest-corner, red 10%, yellow 10%, blue); 
+	margin: 20px;
+
+}
+
+img{
+	float: left;
+	margin-right: 15px;
+}
+
+#box-opacity{
+	width: 800px;
+	height: 400px;
+	padding: 30px;
+	margin-bottom: 15px;
+	border: 2px solid black;
+	background: Tan;
+	opacity: 0.5;
+
+}
+
+#box-opacity2{
+	width: 800px;
+	height: 400px;
+	padding: 30px;
+	margin-bottom: 15px;
+	border: 2px solid black;
+	background: rgba(150,0,0,1);
+/*	opacity: 0.5;
+*/
+}
+
+#box-blend{
+	width: 400px;
+	height: 400px;
+	padding: 30px;
+	margin: 15px;
+	border: 2px solid black;
+	background-color: yellow;
+	background-image: url(image/cat.png);
+	background-blend-mode: darken;
+}
+
+#box-mixblend{
+		width: 440px;
+		height: 440px;
+		border: 2px solid black;
+		/*background-image: url(image/cat.png);	*/
+		background-color: blue;
+		}
+
+h2{
+	mix-blend-mode: screen;
+}
+
+#img-mixblend{
+	mix-blend-mode: multiply;
+}
+
+ul{
+	border: 1px solid black;
+}
+
+
+li{
+	border: 1px solid black;
+	/*display: inline;*/
+	list-style-position: inside;
+}
+
+span{
+	border: 1px solid black;
+	display: block;
+	padding: 10px;
+}
+
+a{
+	border: 2px solid black;
+	width: 200px;
+	margin: 10px;
+	display: inline-block;
+	padding: 20px;
+}
+
+
+/*#h1-display{
+	display: none;
+}
+
+#ul-display{
+	display: none;
+}*/
+
+
+
+

@@ -1,0 +1,34 @@
+@mixin warning {
+	background-color: orange;
+	color: #fff;
+}
+
+@mixin large-text {
+	font: {
+		size:22px;
+		weight:bold;
+	}
+}
+
+@mixin rounded {
+	border-radius: 6px;
+}
+
+@mixin fancy-links {
+	a {
+		font-style: italic;
+		text-decoration: none;
+	}
+}
+
+@mixin clearfix {
+	display: inline-block;
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	* html & {height: 1px}
+	}

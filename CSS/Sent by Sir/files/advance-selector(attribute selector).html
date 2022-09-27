@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Advance Selector (Attribute Selector)</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		p{
+			font-size: 19px;
+			line-height: 25px;
+		}
+
+		input[type='text']{
+			border: 3px solid red;
+		}
+
+		img[title='cat']{
+			border: 1px solid red;
+		}
+
+		img[alt='image of cat']{
+			border: 9px solid red;
+		}
+
+		/* attribute name has prefix */
+		img[alt^='image']{   
+			border: 3px solid red;
+		}
+
+		img[alt]{
+			border: 8px solid red;
+		}
+
+		/* attribute name has suffix */
+		img[alt$='animal']{
+			border: 3px solid red;
+		}
+
+		/* attribute value exactly like this or atleast starts with this */
+		img[alt|='cat']{
+			border: 3px solid red;
+		}
+
+		/* attribute name has this as atleast one occurence */
+		img[alt*='and']{
+			border: 3px solid red;
+		}
+
+		img[alt~='and']{
+			border: 3px solid red;
+		}
+
+		*img[title]{ 
+			border: 3px solid red;
+			box-shadow: 2px 2px 10px red;
+		}
+
+		input[type='text']{
+			border: 3px solid red;
+		}
+
+		a[target='_blank']{
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+from last lecture
+simple selectors --done in last lec
+combinators selectors --done in last lec
+attribute selector --this lecture
+pseudo-classes & pseudo-elements --this lecture
+
+attribute selector:
+a can be replaced by any tag
+attr means attribute
+<table width="500px" cellpadding="0px" cellspacing="0px"></table>
+<img src="logo.png" alt="logo" title="logo of cognitio" width="200px"/>
+<input type="radio" id="gender" name="gender" value="male"/>
+
+	a[attr] - Element with specific Attribute
+	a[attr=val] - Attribute whose value is exactly value
+	a[attr^=val] - Attribute begins with value
+	a[attr|=val] - Attribute begins with value OR is first in a dash separated list
+	a[attr$=val] - Attribute ends with value
+	a[attr*=val] - value occurs anywhere in attribute
+	a[attr~=val] - Value matches attribute in space separated list (value having space before and after it)
+
+<h1> CSS Advance Attribute Selector</h1>
+
+<div class="cup firs-elem para-head"></div>
+
+<img src="cat.png" width="30%" alt="cat-animal and cat">
+
+<p>sdlavnslidfvn <a href="" target="_blank">dlvsndilnv</a> ;l nds n;n ;anc nc ;anc la cnvvnisln a;v ;n l sdlavnslidfsdlavnslidfvn dlvsndilnv ;l nds n;n ;anc nc ;anc la <a href="" target="">dlvsndilnv</a> cnvvnisln a;v ;n lvn dlvsndilnv ;l nds n;n ;anc nc ;anc la </p>
+
+<img src="cat.png" title="cat" width="30%" alt="maio maio">
+<br><br>
+
+Name <input type="text" name=""> <br><br>
+
+Password <input type="password" name=""> <br><br>
+</body>
+</html>

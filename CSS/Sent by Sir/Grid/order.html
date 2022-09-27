@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid Order Positioning</title>
+	<style type="text/css">
+		body{ font-family: arial, helvetica; }
+		h1{ padding: 0 0 0 40px; }
+
+		.container{
+			background: lightgrey;
+			width: 600px;
+			margin:  50px auto 0;
+
+			display: grid;
+		
+			/* the grid width is limited to 200 and 300px only remaining words will extend to botom*/
+			grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+			grid-template-rows: repeat(2, 150px);
+			grid-auto-rows: 80px;
+
+			/* ordering similar to positioning */
+
+		}
+
+		.item1{ background: orangered; order: 6; }
+		.item2{ background: yellowgreen; order: 5; }
+		.item3{ background: mediumpurple;order: 4;}
+		.item4{ background: hotpink; order: 3; }
+		.item5{ background: royalblue; order: 2;}
+		.item6{ background: maroon; order: 1; }
+
+		.items{ color: white; font-weight: bolder; padding: 10px;}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="items item1">One</div>
+	<div class="items item2">Two</div>
+	<div class="items item3">Three</div>
+	<div class="items item4">Four</div>
+	<div class="items item5">Five</div>
+	<div class="items item6">Six</div>
+</div>
+</body>
+</html>

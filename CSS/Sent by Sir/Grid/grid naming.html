@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid Spanning</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		.container{
+			background: #eee;
+			width: 720px;
+			margin:  45px auto 0;
+			display: grid;
+			grid-template-columns: repeat(3, [col-start] 1fr [col-end]); /* repeate two column with 200px width */
+			/* grid-template-columns: auto auto auto; /* also in % */
+			grid-template-rows: [header-start] 120px [header-end menu-start] 60px [menu-end box1] 100px 400px 50px; /* also in % */
+			
+			grid-gap: 15px;
+			/* grid-column-gap: 20px; */
+			/* grid-gap: 15px 20px; */
+		}
+
+		.header{
+			background: orangered;
+			grid-row: header-start / header-end;
+			/* grid-row-end: 2; */
+			/* grid-row: starting/ending; */
+			/* grid-column: 1 / -1; */
+			grid-column: col-start 1 / col-end 3;
+			/* grid-column-end: 4; */
+			/* grid-column: starting/ending; */
+			/* z-index: 1; */
+			/* grid-area: row starting / cloumn starting / row end / column end; */
+		}
+		
+		.menu{
+			background: yellowgreen;
+			grid-row: 2 / 3;
+			grid-column: 1 / -1;
+			/* margin-top: 0; */
+		}
+		.box2{
+			background: slateblue;
+			
+		}
+		.box1{
+			background: hotpink;
+			
+		}
+		.sidebar{
+			background: royalblue;
+			grid-row: 3 / 5;
+			grid-column: 3 / 4
+		}
+		.content{
+			background: goldenrod;
+			grid-row: 4 / 5;
+			grid-column: 1 / 3;
+		}
+		.footer{
+			background: palegoldenrod;
+			grid-row:  5 / 6;
+			grid-column: 1 / -1;
+		}
+	</style>
+</head>
+<body>
+Properties
+
+
+<h1>Css Grid Columns and Rows</h1>
+<div class="container">
+	<div class="items header">Header</div>
+	<div class="items menu">Menu</div>
+	<div class="items box1">Box 1</div>
+	<div class="items box2">Box 2</div>
+	<div class="items sidebar">Sidebar</div>
+	<div class="items content">Content</div>
+	<div class="items footer">Footer</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Object fit</title>
+	<style type="text/css">
+		body{
+			font-family: arial, helvetica;
+			background: lightgray;
+		}
+
+		.container{
+			width: 70%;
+			margin: 0 auto;
+		}
+
+	
+		.box{
+			width: 32%;
+			/*border: 2px solid red;*/
+			float: left;
+			box-sizing: border-box;
+			padding: 10px;
+			margin-right: 2%;
+			margin-bottom: 13px;
+			background: white;
+		}
+
+		.box img{
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			object-fit: scale-down; same like content
+			object-fit: fill;
+			object-fit: content;
+			/*default values center - botom left right top*/
+			object-position: top; top default center
+			object-position: 50px 50px;
+		}
+
+		@media screen and (max-width: 950px){
+			.box{
+				width: 48%;
+			}
+		}
+
+		@media screen and (max-width: 800px){
+			.box{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+to make the images and the videos responsive
+fill
+contain
+cover
+scale-down
+none
+
+
+<h1 style="margin-bottom: 30px;">CSS Object fit</h1>
+<div class="container">
+	<div class="box">
+		<img src="egale.jpg"> 
+		<p>ahklfszin lhfspii hgzkglkzjk jzhlsdkhvds lnivhnkl hvblzjvlnk akjcsdi ofson;la;a ;a hhcch ac</p>
+	</div>
+	<div class="box">
+		<img src="egale1.jpg"> 
+		<p>ahklfszin lhfspii hgzkglkzjk jzhlsdkhvds lnivhnkl hvblzjvlnk akjcsdi ofson;la;a ;a hhcch ac</p>
+	</div>
+	<div class="box">
+		<img src="egale2.jpg"> 
+		<p>ahklfszin lhfspii hgzkglkzjk jzhlsdkhvds lnivhnkl hvblzjvlnk akjcsdi ofson;la;a ;a hhcch ac</p>
+	</div> 
+	
+</div>
+
+</body>
+</html>

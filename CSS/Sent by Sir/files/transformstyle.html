@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transform Style</title>
+	<style type="text/css">
+		body{
+			font-family: arial, helvetica;
+		}
+
+		div{
+			font-size: 20px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.parent{
+			width: 400px;
+			height: 250px;
+			margin: 0 0 70px 100px;
+			background: gray;
+			perspective: 800px;
+			transform: rotateY(30deg);
+			transform-style: preserve-3d;
+		}
+
+		#box{
+			width: 400px;
+			height: 250px;
+			background: pink;
+			padding-top: 20px;
+			transform: rotateX(60deg);
+			transform-origin: bottom;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+should be used with transform
+values
+flat -- default
+preserve-3d -- the main tag will look like 3d if preserve 3d property is given to it, and the transforms inside the tag will have 3d effect
+
+
+<h1 style="margin-bottom: 50px;"></h1>
+<div class="parent">
+	<div id="box">cognitio</div>
+</div>
+
+</body>
+</html>

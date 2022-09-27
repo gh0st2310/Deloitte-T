@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  color: black; }
+
+h1, h2, h3, h4 {
+  font-family: "Palatino Linotype", Georgia, serif; }
+
+p {
+  font-family: Verdana, Arial, sans-serif; }
+
+a {
+  color: v #f27731; }
+
+a {
+  font-style: italic;
+  text-decoration: none; }
+
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px; }
+
+#header {
+  border-radius: 6px;
+  height: 60px;
+  background-color: aqua; }
+  #header #main-menu li {
+    display: inline; }
+    #header #main-menu li a {
+      font-style: italic;
+      text-decoration: none; }
+  #header #main-menu a {
+    color: white; }
+
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#footer {
+  height: 90px;
+  background-color: #ccf962; }
+
+/*# sourceMappingURL=main.css.map */

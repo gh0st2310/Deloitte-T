@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Variable Property</title>
+	<style type="text/css">
+		
+:root{
+	--main-color: yellow;
+	/*--head-font: impact;
+	--p-font: verdana;*/
+	--heading-color: green;
+}
+
+.classA{	/*this is only applicatble to class A, hence it is a local variable for class A, can be used anywhere inside class A */ 
+	color: var(--main-color);
+}
+
+.classB{
+	background-color: var(--main-color);
+}
+#box h1{
+	/*background: var(--main-color)*/
+	background: var(--heading-color);
+}
+#box h2{
+	/*background: var(--main-color)*/
+	background: var(--heading-color);
+}
+#box h3{
+	/*background: var(--main-color)*/
+	background: var(--heading-color);
+}
+#box h4{
+	/*background: var(--main-color)*/
+	background: var(--main-color);
+}
+#box h5{
+	/*background: var(--main-color)*/
+	background: var(--main-color);
+}
+#box h6{
+	/*background: var(--main-color)*/
+	background: var(--main-color);
+}
+</style>
+</head>
+<body>
+<div id="box">
+	<h1>Hello</h1>
+	<h2>Hello</h2>
+	<h3>Hello</h3>
+	<h4>Hello</h4>
+	<h5>Hello</h5>
+	<h6>Hello</h6>
+	<h2>Hello</h2>
+	<h2>Hello</h2>
+	<h2>Hello</h2>
+	<h2>Hello</h2>
+	<h2>Hello</h2>
+
+</div>
+
+<div class="classA">
+	<h1>This is the css class</h1>
+</div>
+	<h1>This is the css class</h1>
+
+</body>
+</html>

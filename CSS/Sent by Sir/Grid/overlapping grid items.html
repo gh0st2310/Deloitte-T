@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Nested Grid</title>
+	<style type="text/css">
+		body{ 
+			background: white; 
+			font-family: arial, helvetica;
+		}
+
+		h1{
+			padding: 0 0 0 40px;
+		}
+
+		.items{
+			max-width: 150px;
+		}
+		.container{
+			background: wheat;
+			width: 300px;
+			margin: 50px auto 0;
+
+			display: grid;
+			grid-template-columns: repeat(2, 150px);
+			grid-template-rows: repeat(2, 150px);
+			grid-gap: 10px;
+		}
+		.item1{ 
+			background: orange; 
+			grid-column:  1 / span 2;
+			grid-row: 1 / span2;
+			align-self: start;
+			z-index: 3;
+
+		}
+		.item2{ background: green; 
+			grid-column:  1 / span 2;
+			grid-row: 1 / span2;
+			align-self: center;
+			justify-self: center;
+			z-index: 3;
+		}
+		.item3{ background: purple; 
+			grid-column:  1 / span 2;
+			grid-row: 1 / span2;
+			align-self: end;
+			justify-self: end;
+			z-index: 2;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<h1>Css Grid - Nested Grids</h1>
+<div class="container">
+	<div class="items item1">One sldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui iv</div>
+	<div class="items item2">Two sldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui iv</div>
+	<div class="items item3">Three sldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui ivsldhvlkfdl lh rkb lirvel eier e  liv leriuvlieruvnerilv erluverl velii r ilv rlivereiuuvrl iv ui iv</div>
+</div>
+
+</body>
+</html>

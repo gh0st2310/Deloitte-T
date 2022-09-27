@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Nested Grid</title>
+	<style type="text/css">
+		body{ 
+			background: white; 
+			font-family: arial, helvetica;
+		}
+
+		h1{
+			padding: 0 0 0 40px;
+		}
+		.container{
+			background: wheat;
+			width: 70%;
+			margin: 50px auto 0;
+
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 150px);
+			grid-gap: 10px;
+		}
+		.item1{ background: orange; }
+		.item2{ background: green; }
+		.item3{ 
+			background: purple; 
+			display: grid;
+
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			padding: 10px;
+		}
+
+		.item3 > div{
+			background: #fff;
+			color: red;
+		}
+		.item4{ background: pink; }
+
+
+	</style>
+</head>
+<body>
+
+<h1>Css Grid - Nested Grids</h1>
+<div class="container">
+	<div class="items item1">One</div>
+	<div class="items item2">Two</div>
+	<div class="items item3">
+		<div class="subitems1">Three.One</div>
+		<div class="subitems2">Three.Two</div>
+		<div class="subitems3">Three.Three</div>
+	</div>
+		
+	<div class="items item4">Four</div>
+</div>
+
+</body>
+</html>

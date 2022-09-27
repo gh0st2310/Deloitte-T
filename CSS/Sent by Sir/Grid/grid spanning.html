@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid Spanning</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		.container{
+			background: #eee;
+			width: 700px;
+			height: 500px;
+			margin: 70px 0 0 50px;
+			display: grid;
+			/* grid-template-columns: repeat(2, auto); repeate two column with 200px width */
+			grid-template-columns:150px 200px auto; /* also in % */
+			grid-template-rows: 150px 100px 100px; /* also in % */
+			
+			/* grid-row-gap: 15px;
+			grid-column-gap: 20px; */
+			grid-gap: 15px 20px;
+		}
+
+
+
+		.item1{
+			background: orangered;
+			grid-row-start: 2;
+			grid-row-end: 3;
+			/* grid-row: starting/ending; */
+			grid-column-start: 3;
+			grid-column-end: 4;
+			/* grid-column: starting/ending; */
+			z-index: 1;
+
+			/* grid-area: row starting / cloumn starting / row end / column end; */
+		}
+		
+		.item2{
+			background: yellowgreen;
+		}
+		.item3{
+			background: slateblue;
+			/* grid-row: 2 / 4; */
+			grid-row: 2 / span 4;
+
+		}
+		.item4{
+			background: hotpink;
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+		}
+		.item5{
+			background: royalblue;
+		}
+		.item6{
+			background: goldenrod;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			/* grid-column-end: 5; */
+		}
+	</style>
+</head>
+<body>
+Properties
+grid-row-start
+grid-row-end
+grie-row -- shorthand
+grid-column-start
+grid-column-end
+grid-column
+grid-area
+
+<h1>Css Grid Columns and Rows</h1>
+<div class="container">
+	<div class="items item1">First</div>
+	<div class="items item2">Second</div>
+	<div class="items item3">Third</div>
+	<div class="items item4">Fourth</div>
+	<div class="items item5">Fifth</div>
+	<div class="items item6">Sixth</div>
+</div>
+</body>
+</html>

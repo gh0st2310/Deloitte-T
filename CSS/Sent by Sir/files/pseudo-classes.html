@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Pseudo-Classes and Pseudo-Elements</title>
+	<style type="text/css">
+		body{
+			font: 19px/25px arial;
+			padding: 10px 0 0 20px;
+			background: lightgray;
+		}
+
+		h1{
+			font-size: 28px;
+			margin-bottom: 35px
+		}
+
+		/* li:first-child{
+			color: red;
+		} */
+
+		/* p:first-child{
+			color:red;
+		} */
+
+		/* p:last-child{
+			color:rgb(0, 255, 17);
+		} */
+
+		/* #list li:last-child{
+			color:rgb(30, 0, 255);
+		} */
+
+		/* li:nth-child(2n){
+			color:rgb(255, 0, 225);
+		} */
+
+		/* li:nth-child(2n+1){
+			color:rgb(8, 0, 255);
+		} */
+		
+		/* starts from last */
+		/* li:nth-last-child(3){ 
+			color:red;
+		} */
+
+		/* can work without parent */
+		/* p:nth-of-type(3){
+			color:red;
+		} */
+
+		/* there has to be only child available and no sibling */
+		/* li:only-child{
+			color:red;
+		} */
+
+		/* p:not(.test){
+			color: red;
+		} */
+
+		/* p:lang(en){
+			color: blue;
+		} */
+
+		/*p:lang(mr){
+			color: yellow;
+		}
+
+		p:lang(hi){
+			color: green;
+		}*/
+
+
+		/* ul li a:link{
+			color: red;
+		} */
+
+		/* ul a:hover{
+			color: blue;
+		} */
+
+		/* used for simple html sites */
+		/* ul a:visited{ 
+			color:white;
+		} */
+
+		/* ul a:active{
+			color: yellow;
+		} */
+
+		/* p:target{
+			background: gold;
+		} */
+
+		/* input:focus{
+			border: 2px solid red;
+		} */
+
+		/* input[type='checkbox']:checked{
+			box-shadow: 0 0 0 5px red;
+		} */
+
+		/* input[type='checkbox']:checked + label{
+			box-shadow: 0 0 0 1px red;
+			color: red;
+		} */
+
+		/* input[type='radio']:checked{
+			box-shadow: 0 0 0 1px red;
+		} */
+
+		/*input[type='radio']:checked + label{
+			box-shadow: 0 0 0 1px red;
+			color: red;
+		}*/
+
+		/* input[type='email']:disabled{
+			border: 2px solid blue;
+		} */
+
+		/* input:disabled{
+			border: 2px solid blue;
+		} */
+
+		/* input:required{
+			border: 2px solid green;
+			background: wheat;
+		} */
+
+		/* input:optional{
+			border: 2px solid red;
+		} */
+		
+	</style>
+</head>
+<body>
+till now we have covered
+simple selectors
+combinator selectors
+attribute selector
+pseudo-classes and pseudo-elements -- this is what we are going to learn
+
+:first-child
+:last-child
+:nth-child()
+:nth-last-child()
+:nth-last-of-type()
+:nth-of-type()
+:only-child
+:not()
+:lang()
+:link -basically used with anchor tag-
+:hover -basically used with anchor tag-
+:visited -basically used with anchor tag-
+:active -basically used with anchor tag-
+:target
+:focus
+:checked
+:disabled
+:enabled
+:required
+:optional
+
+
+<h1>CSS Pseudo Classes Selectors</h1>
+
+<ul>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+</ul>
+
+<ul>
+	<li>Only Child.</li>
+</ul>
+
+
+<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+
+<p class="test">Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+
+<ul id="list">
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+	<li>Anurag is a good boy.</li>
+</ul>
+
+<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+
+<div>
+	<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+	<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+</div>
+
+<div>
+	<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+	<p>Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+</div>
+
+<header>
+	<p>This is the sample p tag</p>
+	<p>This is the sample p tag</p>
+</header>
+
+
+<p lang="en">Anurag is a good boy.</p>
+<p lang="mr">अनुराग चांगला मुलगा आहे.</p>
+<p lang="hi">अनुराग एक अच्छा लड़का है।</p>
+
+
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">Abour Us</a></li>
+	<li><a href="">Gallery</a></li>
+	<li><a href="">Contact Us</a></li>
+	<li><a href="">Next</a></li>
+</ul>
+
+
+<ul>
+	<li><a href="#html">What is HTML</a></li>
+	<li><a href="#css">What is CSS</a></li>
+	<li><a href="#js">What is JavaScript</a></li>
+</ul>
+
+<h2>All Answers: </h2>
+<p id="html">Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+<p id="css">Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+<p id="js">Anurag is a good boy. Anurag is a good boy. Anurag is a good boy. </p>
+
+<h1>Form Example</h1>
+<form action="">
+	<label>First Name: </label><input type="text" required="">
+
+	<label>Last Name: </label><input type="text" required=""><br>
+
+	<label>Your Age: </label><input type="number" min="18" max="150" maxlength="3"><br>
+
+	<label>Your Email-ID: </label><input type="email" disabled=""><br>
+
+	<label>Your Hobbies: </label><br>
+		<input type="checkbox" name="hobby"><label>Sport</label> <br>
+		<input type="checkbox" name="hobby"><label>Music</label><br>
+		<input type="checkbox" name="hobby"><label>Travel</label> <br>
+		<input type="checkbox" name="hobby"><label>Books Reading</label> <br>
+	<br><br>
+
+	<label>Your Gender: </label><br>
+		<input type="radio" name="gender"><label>Male</label> <br>
+		<input type="radio" name="gender"><label>Female</label> <br>
+		<!-- <label>Travel</label><input type="checkbox" name="hobby"><br>
+		<label>Books Reading</label><input type="checkbox" name="hobby"><br> -->
+	<br><br>
+
+	<label>Your Country: </label>
+		<select name="country" id="">
+			<option value="none">Select</option>
+			<option value="india">India</option>
+			<option value="pakistan">Pakistan</option>
+			<option value="srilanka">Sri Lanka</option>
+		</select>
+	<br><br>
+
+	<input type="submit">
+	<br><br>
+		
+</form>
+
+</body>
+</html>

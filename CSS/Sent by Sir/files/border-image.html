@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Border Image</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+			padding: 30px;
+		}
+
+		#box{ 
+			width: 400px;
+			height: 80px;
+			border: 50px solid black;
+			margin: 50px;
+			text-align: justify;
+			padding: 20px;
+			background: mediumpurple;
+
+			border-image-slice: 0 12 0 13;
+			border-image-width: 0px 12px 0px 12px;
+			border-image-outset: 0px 0px 0px 0px;
+			border-image-repeat: repeat repeat;
+			border-image-source: url("https://mdn.mozillademos.org/files/6015/border-image-5.png");
+
+
+			/*border-image-slice: 26 27 27 27;
+			border-image-width: 20px 20px 20px 20px;
+			border-image-outset: 0px 0px 0px 0px;
+			border-image-repeat: stretch stretch;
+			border-image-source: url("https://mdn.mozillademos.org/files/6007/border-image-1.png");
+*/
+
+			/*border-image-source: url(heart.png);
+			border-image-slice: 200;
+			border-image-repeat: round;
+			border-image-outset:50px;
+			border-image-width: 50px;
+			border-image: source / slice / width / outset / repeat;*/
+			/*border-image: linear-gradient(red, blue) 27/35px;*/
+		}
+	</style>
+</head>
+<body>
+we saw border color.
+here we can give an image or gradient to the border
+properties
+
+border-image-source -- the image source
+border-image-slice
+border-image-width
+border-image-outset
+border-image-repeat
+border-image -- short hand
+<h1 style="margin-bottom: 50px">CSS Border-Image</h1>
+
+<div id="box">
+	a;ldjnv szldvnld s zsdnv lo a;sdna aslnd lalakdsn lasiaklsdn alsal dsnla
+	alkb flaialksbnbvl la dfliau aldsubali bf sdbfveyu surbgs lkug i sdfliu 
+</div>
+</body>
+</html>
+border-image generator developer.mozilla.org
+open it in firefox

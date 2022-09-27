@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to CSS</title>
+
+	<!-- internal css -->
+	<style type="text/css">
+		
+		/*this is an by tag name*/
+		h1{
+			color: blue;
+		}
+
+		/*this is an id selector*/
+		#para{
+			background-color: gray;
+			color: white;
+		}
+
+		/*this is class selector*/
+		.main{
+			background-color: yellow;
+		}
+
+
+		h2 a{
+			background-color: black;
+		}
+
+		p span{
+			color: red;
+		}
+
+	</style>
+
+	<!-- external css file -->
+	<!-- <link rel="stylesheet" type="text/css" href="test.css"> -->
+
+</head>
+<body>
+	<div class="main">
+		<!-- inline css example in h1 -->
+		<h1 style="color:  #660000;">Heading</h1>
+		<p id="para">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+	</div>
+
+
+
+	<div>
+		<h2>Second Heading<a href="">Jump to First</a></h2>
+		<p>THis <span>is the p tag</span></p>
+	</div>
+</body>
+</html>
+
+
+<!-- Basic Selectors
+1. ByTagName
+2. class
+3. id -->
+
+
+<!-- Descendant Tags
+list p{
+	
+}
+
+ul#main li{
+	
+} -->

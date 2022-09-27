@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid-Item Positioning</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		.container{
+			background: #eee;
+			width: 700px;
+			height: 500px;
+			margin: 70px 0 0 50px;
+			display: grid;
+			grid-template-columns:150px 200px auto; /* also in % */
+			grid-template-rows: 150px 100px 100px; /* also in % */
+			
+			/* grid-row-gap: 15px;
+			grid-column-gap: 20px; */
+			grid-gap: 15px 20px;
+		}
+
+
+
+		.item1{
+			background: orangered;
+			/* grid-row-start: 2;
+			grid-row-end: 3; */
+			grid-row: 1 / 2;
+			/* grid-row: starting/ending; */
+			/* grid-column-start: 2;
+			grid-column-end: 3; */
+			/* grid-column: starting/ending; */
+			grid-column: 1 / 2;
+
+			/* grid-area: row starting / cloumn starting / row end / column end; */
+			/* grid-area: 1 / 2 / 2 / 3 */
+		}
+		
+		.item2{
+			background: yellowgreen;
+		}
+		.item3{
+			background: slateblue;
+		}
+		.item4{
+			background: hotpink;
+		}
+		.item5{
+			background: royalblue;
+		}
+		.item6{
+			background: goldenrod;
+			grid-row-start: 2;
+			grid-row-end: 3;
+			grid-column-start: 3;
+			grid-column-end: 4;
+		}
+	</style>
+</head>
+<body>
+Properties
+grid-row-start
+grid-row-end
+grie-row -- shorthand
+grid-column-start
+grid-column-end
+grid-column -- shorthand
+grid-area
+
+<h1>Css Grid Columns and Rows</h1>
+<div class="container">
+	<div class="item1">First</div>
+	<div class="item2">Second</div>
+	<div class="item3">Third</div>
+	<div class="item4">Fourth</div>
+	<div class="item5">Fifth</div>
+	<div class="item6">Sixth</div>
+</div></body>
+</html>

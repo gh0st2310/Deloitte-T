@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Table Properties</title>
+	<style type="text/css">
+		body{
+			font-family: arial, helvetica;
+		}
+		table{
+			width: 300px;
+			table-layout: auto;  /*fixed default*/  /*if data increases, width increases in auto*/
+			border-spacing: 10px;
+			border-collapse: collapse;
+			/*border-collapse: separate;  /*default*/
+			empty-cells: hide; /*show default  comment collapse to activate this*/
+		
+
+		}
+		table, td, th{
+			border: 1px solid #000;
+		}
+
+		td, th{
+			vertical-align: middle; /*bottom *//*middle(default)*/
+			padding: 1px 1px;
+		}
+
+		caption{
+			caption-side: top;  /*top*/
+		}
+
+		tr:hover{
+			background: lightgray;
+		}
+
+		tr:nth-child(even){
+			background: lightgray;
+		}
+	</style>
+</head>
+<body>
+<!-- Table Properties (replaces cellpadding cellspacing etc.)
+border-spacing
+border-collapse
+vertical-align
+caption-side
+empty-cells
+table-layout -->
+
+<table>
+	<caption>Employee Record</caption>
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>Anurag</td>
+		<td>Chiplunkar</td>
+		<td>$500</td>
+	</tr>
+	<tr>
+		<td>Sachin Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </td>
+		<td>Tendulkar</td>
+		<td>$100</td>
+	</tr>
+	<tr>
+		<td>Mahendra</td>
+		<td>Dhoni</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+	<tr>
+		<td>Virat</td>
+		<td>Kolhi</td>
+		<td>$50</td>
+	</tr>
+</table>
+
+
+
+</body>
+</html>

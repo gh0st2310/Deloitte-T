@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Queries</title>
+	<style type="text/css">
+		body{
+			background: white;
+			font-family: arial;
+			font-size: 100px;
+		}
+
+		/*these are the break points*/
+		@media screen and (max-width: 1200px){
+			body{
+				background: pink;
+				font-size: 70px;
+
+			}
+		}
+
+		@media screen and (max-width: 1000px){
+			body{
+				background: lightblue;
+				font-size: 50px;
+			}
+		}
+
+		@media screen and (max-width: 700px){
+			body{
+				background: orange;
+				font-size: 30px;
+
+			}
+		}
+
+		@media screen and (max-width: 500px){
+			body{
+				background: red;
+				font-size: 10px;
+
+			}
+		}
+	</style>
+</head>
+<body>
+
+all -- all means having all below written properties
+print -- if user wants to print the page how the css will be printed, to write printout css we use print
+screen -- most commony used, mobile tables, laptop, computer screen css
+speech -- for blind people to help the screen recorder
+
+Example:
+@media screen and (max-width: 900px){
+	.container{
+	width: 50%;
+}
+LOGICAL OPERATORS
+and not only
+
+CSS MEDIA FEATURES
+any-hover
+any-pointer
+aspect-ratio
+color
+color-gamut
+color-index
+grid
+height
+hover
+inverted-colors
+light-level
+max-aspect-ratio
+max-color
+max-color-index
+max-height
+max-monochrome
+max-resolution
+max-width
+min-aspect-ratio
+min-color
+min-color-index
+min-height
+min-monochrome
+min-resolution
+min-width
+monochrome
+orientation
+overflow-block
+overflow-inline
+pointer
+resolution
+scan
+scripting
+update
+width
+
+<h1>CSS Media Queries</h1>
+
+</body>
+</html>

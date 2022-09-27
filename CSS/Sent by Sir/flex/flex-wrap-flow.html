@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Flex-Wrap & Flex-Flow</title>
+	<style type="text/css">
+		body{
+			font-family: arial, helvetica;
+		}
+
+		h1{
+			padding: 0 0 0 40px;
+		}
+
+		.container{
+			background: #eee;
+			width: 400px;
+			margin: 50px auto 0;
+			padding: 10px;
+			border: 3px solid #000;
+
+			display: flex;
+			/* flex-wrap: nowrap; */
+			/* flex-direction: column; */
+			/* flex-wrap: wrap; */
+			/* flex-wrap: wrap-reverse; */
+			flex-flow: row wrap-reverse;
+		}
+
+		.item1{ background: orangered; }
+		.item2{ background: yellowgreen; }
+		.item3{ background: mediumpurple; }
+		.item4{ background: orangered; }
+		.item5{ background: mediumpurple; }
+		.item6{ background: orangered; }
+		.item7{ background: mediumpurple; }
+		.item8{ background: orangered; }
+		.item9{ background: mediumpurple; }
+		.item10{ background: yellowgreen; }
+		.item11{ background: mediumpurple; }
+		.item12{ background: yellowgreen; }
+		.item13{ background: orangered; }
+
+		.items{ 
+			color: #fff; 
+			font-size: 20px; 
+			font-weight: bolder;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+properties to learn
+nowrap -- default
+wrap
+wrap-reverse
+
+<h1>CSS Flex-Wrap & Flex-Flow</h1>
+<div class="container">
+	<div class="items item1">One</div>
+	<div class="items item2">Two</div>
+	<div class="items item3">Three</div>
+	<div class="items item4">Four</div>	
+	<div class="items item5">Five</div>	
+	<div class="items item6">Six</div>	
+	<div class="items item7">Seven</div>	
+	<div class="items item8">Eight</div>	
+	<div class="items item9">Nine</div>	
+	<div class="items item10">Ten</div>	
+	<div class="items item11">Eleven</div>	
+	<div class="items item12">Twelve</div>	
+	<div class="items item13">Thirteen</div>	
+</div>
+</body>
+</html>

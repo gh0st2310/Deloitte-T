@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transform 2D</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		#box{
+			width: 250px;
+			height: 150px;
+			background: orange;
+			margin: 150px 300px;
+			/* transform: rotate(90deg); */
+			transform: rotate(-30deg);
+			transform: skewX(50deg);
+			transform: skewY(30deg);
+			/* transform-origin(x-aixs y-axis) */
+			transform-origin: left top;
+			transform-origin: 20% 40%;
+			/* transform: translate(x y); */
+			/* scale will increase the height and width with 2 times */
+			transform: scale(3);
+			/* transform: scaleX(); */
+			/* transform: scaleY(); */
+			/* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+			/* transform: none; */
+
+		}
+	</style>
+</head>
+<body>
+values
+
+rotate(angle)
+translate(x,y)
+translateX(x)
+translateY(y)
+scale(x,y)
+scaleX(x)
+scaleY(y)
+skew(x-angle, y-angle)
+skewX(angle)
+skewY(angle)
+matrix(n,n,n,n,n,n) -- all properties to be used once
+none -- default
+
+
+<h1>CSS Transform 2D</h1>
+<div id="box"></div>
+
+
+</body>
+</html>
