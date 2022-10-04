@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	p{
+		font-size: 32px;
+	}
+}
+.header{
+	position: sticky;
+	top:0;
+	z-index: 30;
+}
+.logoImg{
+	width: 30px;
+	height: 30px;
+}
+.video1{
+	position: fixed;
+	z-index: -3;
+}
+.content1{
+	width: 100%;
+	padding-top: 15%;
+	position: fixed;
+	z-index: 15;
+	color: white;
+	text-align: center;
+}
+.content1 h1{
+	font-size: 56px;
+}
+.content1 p{
+	font-size: 16px;
+}

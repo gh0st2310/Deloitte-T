@@ -1,0 +1,48 @@
+.wrapper1 {
+  width: 100%;
+  padding: 1%;
+  z-index: 20;
+  background-position: center top;
+  background-size: cover; }
+
+.wrapper12 {
+  display: flex;
+  flex-flow: row; }
+
+.lifelinevideo {
+  justify-item: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 1%; }
+
+.vid {
+  max-width: 100%;
+  max-height: 100%; }
+
+.wrapper21 {
+  height: auto;
+  background-color: #232323;
+  padding: 2%;
+  z-index: 2; }
+
+#lifelineCarousel {
+  width: 100%;
+  height: auto;
+  z-index: 2; }
+
+.wrapper1content {
+  padding-left: 15%;
+  padding-right: 5%;
+  color: whitesmoke;
+  text-align: justify; }
+
+.wrapper1content p {
+  font-size: 16px; }
+
+.bio {
+  padding-top: 3%; }
+
+.bio table {
+  width: 80%; }
+
+/*# sourceMappingURL=lifelineStyle.css.map */
